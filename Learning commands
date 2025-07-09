@@ -1,3 +1,63 @@
 #Switch to root user
 sandeepmohapatra177@gmail.com@Sandeep-linux:~$ sudo su
 root@Sandeep-linux:/home/sandeepmohapatra177# 
+
+Dir/files:
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ ls
+s1  s2  s3  s4
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ cd
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ sudo su
+root@Sandeep-linux:/home/sandeepmohapatra177# cd
+root@Sandeep-linux:~# ls
+S1  S2S3  newunzip  r-newzipfile.zip  s7  snap
+root@Sandeep-linux:~# tree
+.
+├── S1
+│   └── S4
+├── S2S3
+│   ├── sandeep.txt
+│   └── sandeep4
+├── newunzip
+│   ├── S2S3
+│   └── r-newzipfile.zip
+├── r-newzipfile.zip
+├── s7
+└── snap
+    └── lxd
+        ├── 32662
+        ├── common
+        └── current -> 32662
+
+Users:
+aad_admins:x:1001:sandeepmohapatra177@gmail.com
+sandeepnew:x:1002:
+mitrabhas:x:1003:
+jpyad:x:1004:
+mitra:x:1005:
+mota:x:1006:
+pamba:x:1007:
+dada:x:1008:
+manjit:x:1009:
+nikhil:x:1010:
+rancho:x:1011:
+
+Group:
+surya:x:1012:jpyad,mota,manjit,nikhil
+brohmos:x:1013:mitra,dada,rancho
+root@Sandeep-linux:~#
+
+Zip/Unzip:
+-rw-r--r-- 1 root  root   160 Jul  7 19:50 r-newzipfile.zip
+.
+├── S1
+│   └── S4
+├── S2S3
+│   ├── sandeep.txt
+│   └── sandeep4
+├── newunzip
+│   ├── S2S3
+│   └── r-newzipfile.zip
+├── r-newzipfile.zip
+├── s7
+└── snap
+
