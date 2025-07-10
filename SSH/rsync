@@ -3,3 +3,7 @@ SCP: Secure Copy protocal:
 Securely copy file to Azure Server
 
 PS C:\Users\sande\Downloads> scp -i C:\Users\sande\Downloads\SSH_Sandeep177.pem "C:\Users\sande\Downloads\scp_secret.txt" azureuser@20.84.115.24:/root/S2S3/sandeep4
+
+
+rsync:
+PS C:\Users\sande\Downloads> rsync -avz -e "C:\Users\sande\Downloads\SSH_Sandeep177.pem" C:/Users/sande/Downloads/scp_secret.txt azureuser@20.84.115.24:/home/azureuse
