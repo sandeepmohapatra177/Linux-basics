@@ -712,6 +712,5 @@ azure.com (20.76.201.171) -- no entry
 sandeepmohapatra177@gmail.com@Sandeep-linux:~$ ifplugstatus
 lo: link beat detected
 eth0: link beat detected
-sandeepmohapatra177@gmail.com@Sandeep-linux:~$ curl
-curl: try 'curl --help' or 'curl --manual' for more information
 sandeepmohapatra177@gmail.com@Sandeep-linux:~$ 
+
