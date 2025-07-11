@@ -1,1 +1,198 @@
+Ping: to check app/website working fine or not
+
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ ping facebook.com
+PING facebook.com (57.144.132.1) 56(84) bytes of data.
+64 bytes from edge-star-mini-shv-03-atl3.facebook.com (57.144.132.1): icmp_seq=1 ttl=49 time=24.1 ms
+64 bytes from edge-star-mini-shv-03-atl3.facebook.com (57.144.132.1): icmp_seq=2 ttl=49 time=15.5 ms
+64 bytes from edge-star-mini-shv-03-atl3.facebook.com (57.144.132.1): icmp_seq=92 ttl=49 time=15.7 ms
+
+--- facebook.com ping statistics ---
+92 packets transmitted, 92 received, 0% packet loss, time 91129ms
+rtt min/avg/max/mdev = 15.336/16.646/25.599/2.053 ms
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$
+
+Netstat: to check active connection/Protocol.
+
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ netstat
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0    592 sandeep-linux.inter:ssh 4.247.135.109:5187      ESTABLISHED
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  2      [ ]         DGRAM                    28564    /run/user/8765592/systemd/notify
+unix  3      [ ]         DGRAM      CONNECTED     13336    /run/systemd/notify
+unix  2      [ ]         DGRAM                    13353    /run/systemd/journal/syslog
+unix  10     [ ]         DGRAM      CONNECTED     13363    /run/systemd/journal/dev-log
+unix  8      [ ]         DGRAM      CONNECTED     13367    /run/systemd/journal/socket
+unix  2      [ ]         DGRAM      CONNECTED     23923    /run/chrony/chronyd.sock
+unix  3      [ ]         STREAM     CONNECTED     24181    
+unix  3      [ ]         STREAM     CONNECTED     25039    
+unix  2      [ ]         DGRAM      CONNECTED     23886    
+unix  3      [ ]         STREAM     CONNECTED     22569    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     21268    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM      CONNECTED     16358    
+unix  3      [ ]         STREAM     CONNECTED     27134    
+unix  2      [ ]         DGRAM      CONNECTED     23856    
+unix  3      [ ]         DGRAM      CONNECTED     19626    
+unix  2      [ ]         DGRAM      CONNECTED     24385    
+unix  3      [ ]         STREAM     CONNECTED     28568    
+unix  3      [ ]         STREAM     CONNECTED     24521    
+unix  3      [ ]         STREAM     CONNECTED     20967    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM      CONNECTED     15239    
+unix  3      [ ]         STREAM     CONNECTED     24522    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     22256    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     21253    
+unix  3      [ ]         STREAM     CONNECTED     25034    
+unix  3      [ ]         STREAM     CONNECTED     24291    
+unix  3      [ ]         DGRAM      CONNECTED     13337    
+unix  3      [ ]         STREAM     CONNECTED     28485    
+unix  3      [ ]         STREAM     CONNECTED     23916    
+unix  3      [ ]         STREAM     CONNECTED     28487    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     20748    
+unix  3      [ ]         STREAM     CONNECTED     23920    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     22247    
+unix  3      [ ]         STREAM     CONNECTED     19788    
+unix  3      [ ]         STREAM     CONNECTED     22026    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     23922    /run/dbus/system_bus_socket
+unix  2      [ ]         DGRAM      CONNECTED     28488    
+unix  3      [ ]         DGRAM      CONNECTED     13338    
+unix  3      [ ]         STREAM     CONNECTED     28569    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     19790    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     22565    
+unix  2      [ ]         STREAM     CONNECTED     28116    
+unix  2      [ ]         DGRAM      CONNECTED     14442    
+unix  2      [ ]         DGRAM      CONNECTED     23914    
+unix  3      [ ]         DGRAM      CONNECTED     28566    
+unix  2      [ ]         DGRAM      CONNECTED     14277    
+unix  3      [ ]         STREAM     CONNECTED     23918    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     23489    
+unix  3      [ ]         STREAM     CONNECTED     25035    
+unix  3      [ ]         STREAM     CONNECTED     20966    
+unix  3      [ ]         STREAM     CONNECTED     21588    
+unix  2      [ ]         DGRAM      CONNECTED     19799    
+unix  3      [ ]         STREAM     CONNECTED     24884    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     28974    
+unix  3      [ ]         DGRAM      CONNECTED     19628    
+unix  3      [ ]         STREAM     CONNECTED     21254    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     17018    
+unix  3      [ ]         DGRAM      CONNECTED     28565    
+unix  3      [ ]         STREAM     CONNECTED     24292    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     15304    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     22562    /run/systemd/journal/stdout
+unix  3      [ ]         SEQPACKET  CONNECTED     23925    
+unix  2      [ ]         DGRAM      CONNECTED     21256    
+unix  3      [ ]         STREAM     CONNECTED     24189    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM      CONNECTED     28558    
+unix  3      [ ]         STREAM     CONNECTED     23056    
+unix  3      [ ]         STREAM     CONNECTED     23917    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     24413    
+unix  3      [ ]         STREAM     CONNECTED     28975    
+unix  3      [ ]         DGRAM      CONNECTED     19629    
+unix  3      [ ]         STREAM     CONNECTED     21251    
+unix  3      [ ]         STREAM     CONNECTED     24977    
+unix  3      [ ]         STREAM     CONNECTED     16352    
+unix  3      [ ]         STREAM     CONNECTED     23915    
+unix  3      [ ]         STREAM     CONNECTED     24414    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     19620    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM      CONNECTED     24247    
+unix  3      [ ]         STREAM     CONNECTED     20749    
+unix  3      [ ]         STREAM     CONNECTED     23842    
+unix  3      [ ]         STREAM     CONNECTED     21258    
+unix  3      [ ]         STREAM     CONNECTED     22556    
+unix  3      [ ]         SEQPACKET  CONNECTED     23924    
+unix  3      [ ]         STREAM     CONNECTED     23921    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     15230    
+unix  3      [ ]         STREAM     CONNECTED     17019    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     23919    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     19618    
+unix  3      [ ]         STREAM     CONNECTED     24883    
+unix  3      [ ]         STREAM     CONNECTED     21593    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     23844    /run/systemd/journal/stdout
+unix  3      [ ]         DGRAM      CONNECTED     15242    
+unix  3      [ ]         STREAM     CONNECTED     27135    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     22022    
+unix  3      [ ]         DGRAM      CONNECTED     19627    
+unix  3      [ ]         STREAM     CONNECTED     16353    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM                    23488    
+unix  3      [ ]         STREAM     CONNECTED     24978    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     21255    
+unix  2      [ ]         DGRAM      CONNECTED     28279    
+unix  2      [ ]         DGRAM      CONNECTED     19621    
+unix  3      [ ]         DGRAM      CONNECTED     15241    
+unix  3      [ ]         STREAM     CONNECTED     25040    
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$
+
+
+ifconfig: shows the interfaces like eth0,lo,docker:
+
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ ifconfig
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.0.4  netmask 255.255.255.0  broadcast 10.0.0.255
+        inet6 fe80::7eed:8dff:fe18:92d8  prefixlen 64  scopeid 0x20<link>
+        ether 7c:ed:8d:18:92:d8  txqueuelen 1000  (Ethernet)
+        RX packets 2243  bytes 732199 (732.1 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2165  bytes 2691619 (2.6 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 54  bytes 6722 (6.7 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 54  bytes 6722 (6.7 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ 
+
+Traceroute: shows the ips that connected between source and destination:
+
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ traceroute google.com
+traceroute to google.com (172.253.122.100), 30 hops max, 60 byte packets
+ 1  * * *
+ 2  * * *
+ 3  * * *
+ 4  * * *
+ 5  * * *
+ 6  * * *
+ 7  * * *
+ 8  * * *
+ 9  * * *
+10  * * *
+11  * * *
+12  * * *
+13  * * *
+14  * * *
+15  * * *
+16  * * *
+17  * * *
+18  * * *
+19  * * *
+20  * * *
+21  * * *
+22  * * *
+23  * * *
+24  * * *
+25  * * *
+26  * * *
+27  * * *
+28  * * *
+29  * * *
+30  * * *
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$
+
+tracepath: shows the path between source and destination
+
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ tracepath google.com
+ 1?: [LOCALHOST]                      pmtu 1500
+ 1:  no reply
+ 2:  no reply
+ 3:  no reply
+ 4:  no reply
+ 5:  no reply
+ 6:  no reply.... 30 times
+*no reply means packet losses
+
+mtr(my trace route): traceroute+tracepath
 
