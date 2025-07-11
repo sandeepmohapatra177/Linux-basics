@@ -196,3 +196,522 @@ sandeepmohapatra177@gmail.com@Sandeep-linux:~$ tracepath google.com
 
 mtr(my trace route): traceroute+tracepath
 
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ mtr google.com                                                                                My traceroute  [v0.93]
+Sandeep-linux (10.0.0.4)                                                                                                                                            2025-07-11T13:08:45+0000
+Keys:  Help   Display mode   Restart statistics   Order of fields   quit
+                                                                                                                                                    Packets               Pings
+ Host                                                                                                                                             Loss%   Snt   Last   Avg  Best  Wrst StDev
+
+nslookup:
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ nslookup google.com
+Server:         127.0.0.53
+Address:        127.0.0.53#53
+
+Non-authoritative answer:
+Name:   google.com
+Address: 172.253.115.101
+Name:   google.com
+Address: 172.253.115.100
+Name:   google.com
+Address: 172.253.115.113
+Name:   google.com
+Address: 172.253.115.102
+Name:   google.com
+Address: 172.253.115.139
+Name:   google.com
+Address: 172.253.115.138
+Name:   google.com
+Address: 2607:f8b0:4004:c21::66
+Name:   google.com
+Address: 2607:f8b0:4004:c21::65
+Name:   google.com
+Address: 2607:f8b0:4004:c21::64
+Name:   google.com
+Address: 2607:f8b0:4004:c21::71
+
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ 
+
+* Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Fri Jul 11 13:03:28 UTC 2025
+
+  System load:  0.01              Processes:             104
+  Usage of /:   6.9% of 28.89GB   Users logged in:       1
+  Memory usage: 34%               IPv4 address for eth0: 10.0.0.4
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Infrastructure is not enabled.
+
+38 updates can be applied immediately.
+31 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+35 additional security updates can be applied with ESM Infra.
+Learn more about enabling ESM Infra service for Ubuntu 20.04 at
+https://ubuntu.com/20-04
+
+New release '22.04.5 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Fri Jul 11 12:04:23 2025 from 4.247.135.109
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ history
+    1  sudo su
+    2  ls
+    3  get update
+    4  apt update
+    5  tree
+    6  mkdir s1 s2 s3 s4
+    7  tree
+    8  pwd
+    9  cd
+   10  sudo su
+   11  cls
+   12  clear
+   13  ls
+   14  tree
+   15  clear
+   16  sudo su
+   17  clear
+   18  who
+   19  whoami
+   20  sudo su
+   21  SUDO SU
+   22  sudo su
+   23  do release-upgrade
+   24  sudo apt update
+   25  sudo su
+   26  whosmi
+   27  whoami
+   28  sudo su
+   29  ping facebook.com
+   30  netstat
+   31  ifconfig
+   32  traceroute google.com
+   33  cdcdcddcdcccxcdssddddss5
+   34  tracepath google.com
+   35  mtr azure.com
+   36  nslookup
+   37  ccsvdagrthfgjnm ,klo;p'[
+   38  }|D
+   39  gfrhfrwE33334567WqaAZsvx vcd
+   40  history
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ mtr google.com
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ nslookup google.com
+Server:         127.0.0.53
+Address:        127.0.0.53#53
+
+Non-authoritative answer:
+Name:   google.com
+Address: 172.253.115.101
+Name:   google.com
+Address: 172.253.115.100
+Name:   google.com
+Address: 172.253.115.113
+Name:   google.com
+Address: 172.253.115.102
+Name:   google.com
+Address: 172.253.115.139
+Name:   google.com
+Address: 172.253.115.138
+Name:   google.com
+Address: 2607:f8b0:4004:c21::66
+Name:   google.com
+Address: 2607:f8b0:4004:c21::65
+Name:   google.com
+Address: 2607:f8b0:4004:c21::64
+Name:   google.com
+Address: 2607:f8b0:4004:c21::71
+
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ telnet google.com 443
+Trying 172.253.115.101...
+Connected to google.com.
+Escape character is '^]'.
+Connection closed by foreign host.
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ hostname
+Sandeep-linux
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ cat /etc/hosts
+127.0.0.1 localhost
+
+# The following lines are desirable for IPv6 capable hosts
+::1 ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+ff02::3 ip6-allhosts
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ ip address show
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 7c:ed:8d:18:92:d8 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.0.4/24 metric 100 brd 10.0.0.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::7eed:8dff:fe18:92d8/64 scope link 
+       valid_lft forever preferred_lft forever
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ iwconfig
+lo        no wireless extensions.
+
+eth0      no wireless extensions.
+
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ ss
+Netid           State            Recv-Q            Send-Q                                      Local Address:Port                             Peer Address:Port            Process           
+u_dgr           ESTAB            0                 0                                     /run/systemd/notify 13338                                       * 0                                 
+u_dgr           ESTAB            0                 0                            /run/systemd/journal/dev-log 13365                                       * 0                                 
+u_dgr           ESTAB            0                 0                             /run/systemd/journal/socket 13369                                       * 0                                 
+u_dgr           ESTAB            0                 0                                /run/chrony/chronyd.sock 23853                                       * 0                                 
+u_dgr           ESTAB            0                 0                                                       * 28934                                       * 28933                             
+u_dgr           ESTAB            0                 0                                                       * 39911                                       * 13365                             
+u_str           ESTAB            0                 0                                                       * 21178                                       * 23977                             
+u_str           ESTAB            0                 0                                                       * 24545                                       * 24546                             
+u_str           ESTAB            0                 0                             /run/dbus/system_bus_socket 23974                                       * 20740                             
+u_dgr           ESTAB            0                 0                                                       * 28855                                       * 13365                             
+u_str           ESTAB            0                 0                             /run/systemd/journal/stdout 17025                                       * 17024                             
+u_str           ESTAB            0                 0                                                       * 21246                                       * 21248                             
+u_dgr           ESTAB            0                 0                                                       * 21429                                       * 13365                             
+u_dgr           ESTAB            0                 0                                                       * 19633                                       * 19632                             
+u_str           ESTAB            0                 0                             /run/dbus/system_bus_socket 24546                                       * 24545                             
+u_str           ESTAB            0                 0                                                       * 23973                                       * 23972                             
+u_dgr           ESTAB            0                 0                                                       * 28933                                       * 28934                             
+u_dgr           ESTAB            0                 0                                                       * 13882                                       * 13338                             
+u_dgr           ESTAB            0                 0                                                       * 14396                                       * 13369                             
+u_str           ESTAB            0                 0                             /run/dbus/system_bus_socket 23976                                       * 21176                             
+u_str           ESTAB            0                 0                                                       * 40146                                       * 40147                             
+u_str           ESTAB            0                 0                             /run/dbus/system_bus_socket 23979                                       * 23160                             
+u_str           ESTAB            0                 0                             /run/systemd/journal/stdout 16296                                       * 16295                             
+u_dgr           ESTAB            0                 0                                                       * 23707                                       * 13365                             
+u_dgr           ESTAB            0                 0                                                       * 19803                                       * 13369                             
+u_str           ESTAB            0                 0                             /run/systemd/journal/stdout 24377                                       * 24376                             
+u_str           ESTAB            0                 0                                                       * 24901                                       * 24902                             
+u_str           ESTAB            0                 0                             /run/systemd/journal/stdout 19624                                       * 19622                             
+u_seq           ESTAB            0                 0                                                       * 23855                                       * 23854                             
+u_str           ESTAB            0                 0                                                       * 23160                                       * 23979                             
+u_dgr           ESTAB            0                 0                                                       * 15236                                       * 15237                             
+u_str           ESTAB            0                 0                                                       * 24907                                       * 24906                             
+u_str           ESTAB            0                 0                                                       * 20740                                       * 23974                             
+u_str           ESTAB            0                 0                             /run/systemd/journal/stdout 23004                                       * 22533                             
+u_str           ESTAB            0                 0                             /run/dbus/system_bus_socket 23978                                       * 23008                             
+u_str           ESTAB            0                 0                                                       * 15225                                       * 15299                             
+u_str           ESTAB            0                 0                                                       * 17024                                       * 17025                             
+u_str           ESTAB            0                 0                                                       * 24906                                       * 24907                             
+u_seq           ESTAB            0                 0                                                       * 23854                                       * 23855                             
+u_str           ESTAB            0                 0                                                       * 28936                                       * 28937                             
+u_dgr           ESTAB            0                 0                                                       * 19630                                       * 19631                             
+u_str           ESTAB            0                 0                                                       * 21648                                       * 21650                             
+u_str           ESTAB            0                 0                             /run/systemd/journal/stdout 15299                                       * 15225                             
+u_dgr           ESTAB            0                 0                                                       * 13339                                       * 13340                             
+u_str           ESTAB            0                 0                                                       * 28852                                       * 28854                             
+u_str           ESTAB            0                 0                             /run/dbus/system_bus_socket 24272                                       * 24271                             
+u_str           ESTAB            0                 0                                                       * 19622                                       * 19624                             
+u_str           ESTAB            0                 0                                                       * 24865                                       * 24866                             
+u_str           ESTAB            0                 0                                                       * 21322                                       * 21324                             
+u_str           ESTAB            0                 0                                                       * 22013                                       * 22015                             
+u_str           ESTAB            0                 0                                                       * 22534                                       * 23005                             
+u_dgr           ESTAB            0                 0                                                       * 28926                                       * 13369                             
+u_str           ESTAB            0                 0                                                       * 40147                                       * 40146                             
+u_str           ESTAB            0                 0                                                       * 24133                                       * 24140                             
+u_dgr           ESTAB            0                 0                                                       * 24236                                       * 13369                             
+u_str           ESTAB            0                 0                             /run/systemd/journal/stdout 21650                                       * 21648                             
+u_str           ESTAB            0                 0                                                       * 19792                                       * 19794                             
+u_str           ESTAB            0                 0                                                       * 26747                                       * 26748                             
+u_dgr           ESTAB            0                 0                                                       * 23962                                       * 13365                             
+u_dgr           ESTAB            0                 0                                                       * 15237                                       * 15236                             
+u_str           ESTAB            0                 0                             /run/systemd/journal/stdout 21324                                       * 21322                             
+u_str           ESTAB            0                 0                                                       * 23008                                       * 23978                             
+u_str           ESTAB            0                 0                                                       * 22533                                       * 23004                             
+u_dgr           ESTAB            0                 0                                                       * 19625                                       * 13369                             
+u_str           ESTAB            0                 0                                                       * 24932                                       * 24933                             
+u_str           ESTAB            0                 0                                                       * 24376                                       * 24377                             
+u_str           ESTAB            0                 0                             /run/systemd/journal/stdout 22015                                       * 22013                             
+u_dgr           ESTAB            0                 0                                                       * 15234                                       * 13369                             
+u_str           ESTAB            0                 0                                                       * 21176                                       * 23976                             
+u_dgr           ESTAB            0                 0                                                       * 19632                                       * 19633                             
+u_str           ESTAB            0                 0                             /run/systemd/journal/stdout 23005                                       * 22534                             
+u_dgr           ESTAB            0                 0                                                       * 13340                                       * 13339                             
+u_str           ESTAB            0                 0                             /run/dbus/system_bus_socket 24902                                       * 24901                             
+u_str           ESTAB            0                 0                             /run/systemd/journal/stdout 20892                                       * 20891                             
+u_dgr           ESTAB            0                 0                                                       * 24525                                       * 13365                             
+u_dgr           ESTAB            0                 0                                                       * 19631                                       * 19630                             
+u_str           ESTAB            0                 0                             /run/systemd/journal/stdout 21248                                       * 21246                             
+u_dgr           ESTAB            0                 0                                                       * 16381                                       * 13365                             
+u_str           ESTAB            0                 0                             /run/systemd/journal/stdout 19794                                       * 19792                             
+u_str           ESTAB            0                 0                                                       * 22239                                       * 23001                             
+u_str           ESTAB            0                 0                             /run/systemd/journal/stdout 23964                                       * 23858                             
+u_str           ESTAB            0                 0                                                       * 23972                                       * 23973                             
+u_str           ESTAB            0                 0                                                       * 39760                                       * 0                                 
+u_str           ESTAB            0                 0                             /run/systemd/journal/stdout 24140                                       * 24133                             
+u_str           ESTAB            0                 0                             /run/systemd/journal/stdout 28854                                       * 28852                             
+u_str           ESTAB            0                 0                                                       * 24271                                       * 24272                             
+u_str           ESTAB            0                 0                             /run/dbus/system_bus_socket 24866                                       * 24865                             
+u_str           ESTAB            0                 0                                                       * 20741                                       * 23975                             
+u_str           ESTAB            0                 0                             /run/dbus/system_bus_socket 28937                                       * 28936                             
+u_str           ESTAB            0                 0                             /run/dbus/system_bus_socket 23977                                       * 21178                             
+u_str           ESTAB            0                 0                                                       * 24933                                       * 24932                             
+u_str           ESTAB            0                 0                                                       * 23858                                       * 23964                             
+u_str           ESTAB            0                 0                             /run/dbus/system_bus_socket 23975                                       * 20741                             
+u_str           ESTAB            0                 0                             /run/systemd/journal/stdout 23001                                       * 22239                             
+u_dgr           ESTAB            0                 0                                                       * 23971                                       * 13365                             
+u_str           ESTAB            0                 0                                                       * 16295                                       * 16296                             
+u_str           ESTAB            0                 0                                                       * 20891                                       * 20892                             
+u_str           ESTAB            0                 0                             /run/dbus/system_bus_socket 26748                                       * 26747                             
+icmp6           UNCONN           0                 0                                                  *%eth0:ipv6-icmp                                   *:*                                 
+tcp             ESTAB            0                 192                                              10.0.0.4:ssh                             4.247.135.109:40010                             
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ dig azure.com
+
+; <<>> DiG 9.18.30-0ubuntu0.20.04.2-Ubuntu <<>> azure.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 16718
+;; flags: qr rd ra; QUERY: 1, ANSWER: 5, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;azure.com.                     IN      A
+
+;; ANSWER SECTION:
+azure.com.              809     IN      A       20.112.250.133
+azure.com.              809     IN      A       20.231.239.246
+azure.com.              809     IN      A       20.236.44.162
+azure.com.              809     IN      A       20.70.246.20
+azure.com.              809     IN      A       20.76.201.171
+
+;; Query time: 4 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
+;; WHEN: Fri Jul 11 13:33:39 UTC 2025
+;; MSG SIZE  rcvd: 118
+
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ whois azure.com
+   Domain Name: AZURE.COM
+   Registry Domain ID: 3838715_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.markmonitor.com
+   Registrar URL: http://www.markmonitor.com
+   Updated Date: 2025-03-01T02:00:09Z
+   Creation Date: 1994-10-25T04:00:00Z
+   Registry Expiry Date: 2025-10-24T04:00:00Z
+   Registrar: MarkMonitor Inc.
+   Registrar IANA ID: 292
+   Registrar Abuse Contact Email: abusecomplaints@markmonitor.com
+   Registrar Abuse Contact Phone: +1.2086851750
+   Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited
+   Domain Status: serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited
+   Domain Status: serverTransferProhibited https://icann.org/epp#serverTransferProhibited
+   Domain Status: serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited
+   Name Server: NS1-39.AZURE-DNS.COM
+   Name Server: NS2-39.AZURE-DNS.NET
+   Name Server: NS3-39.AZURE-DNS.ORG
+   Name Server: NS4-39.AZURE-DNS.INFO
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2025-07-11T13:38:35Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile; or (2) enable high volume, automated, electronic processes
+that apply to VeriSign (or its computer systems). The compilation,
+repackaging, dissemination or other use of this Data is expressly
+prohibited without the prior written consent of VeriSign. You agree not to
+use electronic processes that are automated and high-volume to access or
+query the Whois database except as reasonably necessary to register
+domain names or modify existing registrations. VeriSign reserves the right
+to restrict your access to the Whois database in its sole discretion to ensure
+operational stability.  VeriSign may restrict or terminate your access to the
+Whois database for failure to abide by these terms of use. VeriSign
+reserves the right to modify these terms at any time.
+
+The Registry database contains ONLY .COM, .NET, .EDU domains and
+Registrars.
+Domain Name: azure.com
+Registry Domain ID: 3838715_DOMAIN_COM-VRSN
+Registrar WHOIS Server: whois.markmonitor.com
+Registrar URL: http://www.markmonitor.com
+Updated Date: 2025-02-28T23:07:06+0000
+Creation Date: 1994-10-25T04:00:00+0000
+Registrar Registration Expiration Date: 2025-10-24T00:00:00+0000
+Registrar: MarkMonitor, Inc.
+Registrar IANA ID: 292
+Registrar Abuse Contact Email: abusecomplaints@markmonitor.com
+Registrar Abuse Contact Phone: +1.2086851750
+Domain Status: clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)
+Domain Status: clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)
+Domain Status: clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)
+Domain Status: serverUpdateProhibited (https://www.icann.org/epp#serverUpdateProhibited)
+Domain Status: serverTransferProhibited (https://www.icann.org/epp#serverTransferProhibited)
+Domain Status: serverDeleteProhibited (https://www.icann.org/epp#serverDeleteProhibited)
+Registrant Name: Domain Administrator
+Registrant Organization: Microsoft Corporation
+Registrant Street: One Microsoft Way, 
+Registrant City: Redmond
+Registrant State/Province: WA
+Registrant Postal Code: 98052
+Registrant Country: US
+Registrant Phone: +1.4258828080
+Registrant Phone Ext: 
+Registrant Fax: +1.4259367329
+Registrant Fax Ext: 
+Registrant Email: domains@microsoft.com
+Tech Name: MSN Hostmaster
+Tech Phone: +1.4258828080
+Tech Email: msnhst@microsoft.com
+Name Server: ns3-39.azure-dns.org
+Name Server: ns4-39.azure-dns.info
+Name Server: ns2-39.azure-dns.net
+Name Server: ns1-39.azure-dns.com
+DNSSEC: unsigned
+URL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/
+>>> Last update of WHOIS database: 2025-07-11T13:36:25+0000 <<<
+
+For more information on WHOIS status codes, please visit:
+  https://www.icann.org/resources/pages/epp-status-codes
+
+If you wish to contact this domain’s Registrant, Administrative, or Technical
+contact, and such email address is not visible above, you may do so via our web
+form, pursuant to ICANN’s Temporary Specification. To verify that you are not a
+robot, please enter your email address to receive a link to a page that
+facilitates email communication with the relevant contact(s).
+
+Web-based WHOIS:
+  https://domains.markmonitor.com/whois/contact/azure.com
+
+If you have a legitimate interest in viewing the non-public WHOIS details, send
+your request and the reasons for your request to whoisrequest@markmonitor.com
+and specify the domain name in the subject line. We will review that request and
+may ask for supporting documentation and explanation.
+
+The data in MarkMonitor’s WHOIS database is provided for information purposes,
+and to assist persons in obtaining information about or related to a domain
+name’s registration record. While MarkMonitor believes the data to be accurate,
+the data is provided "as is" with no guarantee or warranties regarding its
+accuracy.
+
+By submitting a WHOIS query, you agree that you will use this data only for
+lawful purposes and that, under no circumstances will you use this data to:
+  (1) allow, enable, or otherwise support the transmission by email, telephone,
+or facsimile of mass, unsolicited, commercial advertising, or spam; or
+  (2) enable high volume, automated, or electronic processes that send queries,
+data, or email to MarkMonitor (or its systems) or the domain name contacts (or
+its systems).
+
+MarkMonitor reserves the right to modify these terms at any time.
+
+By submitting this query, you agree to abide by this policy.
+
+MarkMonitor Domain Management(TM)
+Protecting companies and consumers in a digital world.
+
+Visit MarkMonitor at https://www.markmonitor.com
+Contact us at +1.8007459229
+In Europe, at +44.02032062220
+----
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ whois ltimindtree.com
+   Domain Name: LTIMINDTREE.COM
+   Registry Domain ID: 2694197737_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.godaddy.com
+   Registrar URL: http://www.godaddy.com
+   Updated Date: 2022-08-18T12:47:03Z
+   Creation Date: 2022-05-06T10:36:22Z
+   Registry Expiry Date: 2028-05-06T10:36:22Z
+   Registrar: GoDaddy.com, LLC
+   Registrar IANA ID: 146
+   Registrar Abuse Contact Email: abuse@godaddy.com
+   Registrar Abuse Contact Phone: 480-624-2505
+   Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited
+   Domain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited
+   Name Server: A1-149.AKAM.NET
+   Name Server: A12-64.AKAM.NET
+   Name Server: A13-64.AKAM.NET
+   Name Server: A20-65.AKAM.NET
+   Name Server: A28-65.AKAM.NET
+   Name Server: A3-67.AKAM.NET
+   DNSSEC: signedDelegation
+   DNSSEC DS Data: 18005 13 2 BADCCCE0FB20A3D3E4446DB203B4D2E3E5EA074BEFF9D20EFCAB8F97B1551BF0
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2025-07-11T13:39:06Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile; or (2) enable high volume, automated, electronic processes
+that apply to VeriSign (or its computer systems). The compilation,
+repackaging, dissemination or other use of this Data is expressly
+prohibited without the prior written consent of VeriSign. You agree not to
+use electronic processes that are automated and high-volume to access or
+query the Whois database except as reasonably necessary to register
+domain names or modify existing registrations. VeriSign reserves the right
+to restrict your access to the Whois database in its sole discretion to ensure
+operational stability.  VeriSign may restrict or terminate your access to the
+Whois database for failure to abide by these terms of use. VeriSign
+reserves the right to modify these terms at any time.
+
+The Registry database contains ONLY .COM, .NET, .EDU domains and
+Registrars.
+This WHOIS server is being retired. Please use our RDAP service instead. Rate limit exceeded. Try again after: 2562047h47m16.854775807s.
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ nc
+usage: nc [-46CDdFhklNnrStUuvZz] [-I length] [-i interval] [-M ttl]
+          [-m minttl] [-O length] [-P proxy_username] [-p source_port]
+          [-q seconds] [-s source] [-T keyword] [-V rtable] [-W recvlimit] [-w timeout]
+          [-X proxy_protocol] [-x proxy_address[:port]]           [destination] [port]
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ nc 443
+nc: missing port number
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ nc azure.com 22
+22
+^C
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ arp
+Address                  HWtype  HWaddress           Flags Mask            Iface
+_gateway                 ether   12:34:56:78:9a:bc   C                     eth0
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ arp azure.com
+azure.com (20.76.201.171) -- no entry
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ ifplugstatus
+lo: link beat detected
+eth0: link beat detected
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ curl
+curl: try 'curl --help' or 'curl --manual' for more information
+sandeepmohapatra177@gmail.com@Sandeep-linux:~$ 
