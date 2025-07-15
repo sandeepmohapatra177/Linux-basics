@@ -68,3 +68,19 @@ source=9.67.116.98:8000] ceased
 03/22 08:54:53 INFO   :.....terminator: process terminated with exit code 0
 
 
+Let's find out logs with INFO between 08:54:24 and 08:54:35
+
+root@Sandeep-linux:~/S1/sandeep.log# awk '/INFO/ $2 >= "08:54:24" && $2<= "08:54:35" "{print $1,$2,$3,$4}"' samplelogs
+03/22 08:54:24 INFO   :......rsvp_flow_stateMachine: state RESVED, event T1OUT
+03/22 08:54:35 INFO   :.......rsvp_flow_stateMachine: state RESVED, event PATHTEAR
+03/22 08:54:35 INFO   :.........qosmgr_request: Ioctl to remove reservation successful
+03/22 08:54:35 INFO   :..........rpapi_Reg_UnregFlow: RSVPRemActionName:  Entering
+03/22 08:54:35 INFO   :..........rpapi_Reg_UnregFlow: ReadBuffer:  Entering
+03/22 08:54:35 INFO   :..........rpapi_Reg_UnregFlow: ReadBuffer:  Exiting
+03/22 08:54:35 INFO   :..........rpapi_Reg_UnregFlow: RSVPRemActionName:  Result = 0
+03/22 08:54:35 INFO   :..........rpapi_Reg_UnregFlow: RSVPRemActionName:  Exiting
+03/22 08:54:35 INFO   :..........rpapi_Reg_UnregFlow: flow[sess=9.67.116.99:1047:6, 
+03/22 08:54:35 INFO   :..........qosmgr_response: src-9.67.116.98:8000 dst-9.67.116.99:1047 proto-6
+03/22 08:54:35 INFO   :.......rsvp_flow_stateMachine: state SESSIONED, event PATHTEAR
+root@Sandeep-linux:~/S1/sandeep.log# 
+
