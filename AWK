@@ -84,3 +84,51 @@ root@Sandeep-linux:~/S1/sandeep.log# awk '/INFO/ $2 >= "08:54:24" && $2<= "08:54
 03/22 08:54:35 INFO   :.......rsvp_flow_stateMachine: state SESSIONED, event PATHTEAR
 root@Sandeep-linux:~/S1/sandeep.log# 
 
+
+*************************************************************************************
+Scenarios
+***************************************************************************
+Print all INFO logs within time frame 08:54:24 and 08:54:35
+
+root@Sandeep-linux:~/S1/sandeep.log# awk '/INFO/ $2>="08:54:24" && $2 <= "08:54:35" {print $1,$2,$3,$4}' samplelogs 
+03/22 08:54:24 INFO :......rsvp_flow_stateMachine:
+03/22 08:54:35 INFO :.......rsvp_flow_stateMachine:
+03/22 08:54:35 INFO :.........qosmgr_request:
+03/22 08:54:35 INFO :..........rpapi_Reg_UnregFlow:
+03/22 08:54:35 INFO :..........rpapi_Reg_UnregFlow:
+03/22 08:54:35 INFO :..........rpapi_Reg_UnregFlow:
+03/22 08:54:35 INFO :..........rpapi_Reg_UnregFlow:
+03/22 08:54:35 INFO :..........rpapi_Reg_UnregFlow:
+03/22 08:54:35 INFO :..........rpapi_Reg_UnregFlow:
+03/22 08:54:35 INFO :..........qosmgr_response:
+03/22 08:54:35 INFO :.......rsvp_flow_stateMachine:
+
+Extracted logs will be stored in only_infologs file
+root@Sandeep-linux:~/S1/sandeep.log# awk '/INFO/ $2>="08:54:24" && $2 <= "08:54:35" {print $1,$2,$3,$4}' samplelogs > only_infologs
+root@Sandeep-linux:~/S1/sandeep.log# cat only_infologs 
+03/22 08:54:24 INFO :......rsvp_flow_stateMachine:
+03/22 08:54:35 INFO :.......rsvp_flow_stateMachine:
+03/22 08:54:35 INFO :.........qosmgr_request:
+03/22 08:54:35 INFO :..........rpapi_Reg_UnregFlow:
+03/22 08:54:35 INFO :..........rpapi_Reg_UnregFlow:
+03/22 08:54:35 INFO :..........rpapi_Reg_UnregFlow:
+03/22 08:54:35 INFO :..........rpapi_Reg_UnregFlow:
+03/22 08:54:35 INFO :..........rpapi_Reg_UnregFlow:
+03/22 08:54:35 INFO :..........rpapi_Reg_UnregFlow:
+03/22 08:54:35 INFO :..........qosmgr_response:
+03/22 08:54:35 INFO :.......rsvp_flow_stateMachine:
+
+Print count of INFO logs
+root@Sandeep-linux:~/S1/sandeep.log# awk '/INFO/ {count++} END {print "count is", count}' samplelogs
+count is 24
+
+To print specific rows
+root@Sandeep-linux:~/S1/sandeep.log# awk 'NR>2 && NR<5 {print $1,$2,$3}' samplelogs 
+03/22 08:54:24 TRACE
+03/22 08:54:24 TRACE
+root@Sandeep-linux:~/S1/sandeep.log# 
+
+*****************************************************************************
+
+AWK: can only work on formatted data(CSV,TSV)
+SED :unformatted Data
