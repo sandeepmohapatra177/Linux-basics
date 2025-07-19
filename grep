@@ -1,1 +1,154 @@
+Grep = global regular expression pattern
 
+filering all data
+
+if logs contains INFO and you type info = result is none
+
+root@Sandeep-linux:~/S1/sandeep.log# grep info samplelogs 
+
+root@Sandeep-linux:~/S1/sandeep.log# grep -i info samplelogs (i = insenstive)
+03/22 08:54:24 INFO   :......rsvp_flow_stateMachine: state RESVED, event T1OUT
+03/22 08:54:35 INFO   :.......rsvp_flow_stateMachine: state RESVED, event PATHTEAR
+03/22 08:54:35 INFO   :.........qosmgr_request: Ioctl to remove reservation successful
+03/22 08:54:35 INFO   :..........rpapi_Reg_UnregFlow: RSVPRemActionName:  Entering
+03/22 08:54:35 INFO   :..........rpapi_Reg_UnregFlow: ReadBuffer:  Entering
+03/22 08:54:35 INFO   :..........rpapi_Reg_UnregFlow: ReadBuffer:  Exiting
+03/22 08:54:35 INFO   :..........rpapi_Reg_UnregFlow: RSVPRemActionName:  Result = 0
+03/22 08:54:35 INFO   :..........rpapi_Reg_UnregFlow: RSVPRemActionName:  Exiting
+03/22 08:54:35 INFO   :..........rpapi_Reg_UnregFlow: flow[sess=9.67.116.99:1047:6, 
+03/22 08:54:35 INFO   :..........qosmgr_response: src-9.67.116.98:8000 dst-9.67.116.99:1047 proto-6
+03/22 08:54:35 INFO   :.......rsvp_flow_stateMachine: state SESSIONED, event PATHTEAR
+03/22 08:54:53 INFO   :...check_signals: received TERM signal
+03/22 08:54:53 INFO   :......term_policyAPI: UnRegisterFromPolicyAPI:  Entering
+03/22 08:54:53 INFO   :......term_policyAPI: ReadBuffer:  Entering
+03/22 08:54:53 INFO   :......term_policyAPI: ReadBuffer:  Exiting
+03/22 08:54:53 INFO   :......term_policyAPI: UnRegisterFromPolicyAPI:  Result = 0
+03/22 08:54:53 INFO   :......term_policyAPI: UnRegisterFromPolicyAPI:  Exiting
+03/22 08:54:53 INFO   :......term_policyAPI: APITerminate:  Entering
+03/22 08:54:53 INFO   :......term_policyAPI: APITerminate:  Exiting
+03/22 08:54:53 INFO   :......term_policyAPI: Policy API terminated
+03/22 08:54:53 INFO   :......dreg_process: deregistering process with the system
+03/22 08:54:53 INFO   :......dreg_process: attempt to dereg (ifaeddrg_byaddr)
+03/22 08:54:53 INFO   :......dreg_process: rc from ifaeddrg_byaddr  rc =0
+03/22 08:54:53 INFO   :.....terminator: process terminated with exit code 0
+
+to find count
+
+root@Sandeep-linux:~/S1/sandeep.log# grep -i -c info samplelogs 
+24
+root@Sandeep-linux:~/S1/sandeep.log#
+
+to find all processes
+
+root@Sandeep-linux:~/S1/sandeep.log# ps aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  1.4 169368 12864 ?        Ss   18:00   0:01 /sbin/init
+root           2  0.0  0.0      0     0 ?        S    18:00   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   18:00   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   18:00   0:00 [rcu_par_gp]
+root           5  0.0  0.0      0     0 ?        I<   18:00   0:00 [slub_flushwq]
+root           6  0.0  0.0      0     0 ?        I<   18:00   0:00 [netns]
+root           8  0.0  0.0      0     0 ?        I<   18:00   0:00 [kworker/0:0H-events_highpri]
+root          10  0.0  0.0      0     0 ?        I<   18:00   0:00 [mm_percpu_wq]
+root          11  0.0  0.0      0     0 ?        S    18:00   0:00 [rcu_tasks_rude_]
+root          12  0.0  0.0      0     0 ?        S    18:00   0:00 [rcu_tasks_trace]
+root          13  0.0  0.0      0     0 ?        S    18:00   0:00 [ksoftirqd/0]
+root          14  0.0  0.0      0     0 ?        I    18:00   0:00 [rcu_sched]
+root          15  0.0  0.0      0     0 ?        S    18:00   0:00 [migration/0]
+root          16  0.0  0.0      0     0 ?        I    18:00   0:00 [kworker/0:1-events]
+root          17  0.0  0.0      0     0 ?        S    18:00   0:00 [cpuhp/0]
+root          18  0.0  0.0      0     0 ?        S    18:00   0:00 [kdevtmpfs]
+root          19  0.0  0.0      0     0 ?        I<   18:00   0:00 [inet_frag_wq]
+root          20  0.0  0.0      0     0 ?        S    18:00   0:00 [kauditd]
+root          21  0.0  0.0      0     0 ?        S    18:00   0:00 [khungtaskd]
+root          22  0.0  0.0      0     0 ?        S    18:00   0:00 [oom_reaper]
+root          23  0.0  0.0      0     0 ?        I<   18:00   0:00 [writeback]
+root          24  0.0  0.0      0     0 ?        S    18:00   0:00 [kcompactd0]
+root          25  0.0  0.0      0     0 ?        SN   18:00   0:00 [ksmd]
+root          26  0.0  0.0      0     0 ?        SN   18:00   0:00 [khugepaged]
+root          72  0.0  0.0      0     0 ?        I<   18:00   0:00 [kintegrityd]
+root          73  0.0  0.0      0     0 ?        I<   18:00   0:00 [kblockd]
+root          74  0.0  0.0      0     0 ?        I<   18:00   0:00 [blkcg_punt_bio]
+root          75  0.0  0.0      0     0 ?        I<   18:00   0:00 [tpm_dev_wq]
+root          76  0.0  0.0      0     0 ?        I<   18:00   0:00 [ata_sff]
+root          77  0.0  0.0      0     0 ?        I<   18:00   0:00 [md]
+root          78  0.0  0.0      0     0 ?        I<   18:00   0:00 [edac-poller]
+root          79  0.0  0.0      0     0 ?        I<   18:00   0:00 [hv_vmbus_con]
+root          80  0.0  0.0      0     0 ?        I<   18:00   0:00 [hv_pri_chan]
+root          81  0.0  0.0      0     0 ?        I<   18:00   0:00 [hv_sub_chan]
+root          82  0.0  0.0      0     0 ?        I<   18:00   0:00 [devfreq_wq]
+root          83  0.0  0.0      0     0 ?        S    18:00   0:00 [watchdogd]
+root          85  0.0  0.0      0     0 ?        I<   18:00   0:00 [kworker/0:1H-kblockd]
+root          87  0.0  0.0      0     0 ?        S    18:00   0:00 [kswapd0]
+root          88  0.0  0.0      0     0 ?        S    18:00   0:00 [ecryptfs-kthrea]
+root          90  0.0  0.0      0     0 ?        I<   18:00   0:00 [kthrotld]
+root          91  0.0  0.0      0     0 ?        I<   18:00   0:00 [nfit]
+root          92  0.0  0.0      0     0 ?        S    18:00   0:00 [scsi_eh_0]
+root          94  0.0  0.0      0     0 ?        I<   18:00   0:00 [nvme-wq]
+root          95  0.0  0.0      0     0 ?        I<   18:00   0:00 [nvme-reset-wq]
+root          96  0.0  0.0      0     0 ?        S    18:00   0:00 [scsi_eh_1]
+root          97  0.0  0.0      0     0 ?        I<   18:00   0:00 [scsi_tmf_0]
+root          98  0.0  0.0      0     0 ?        I<   18:00   0:00 [nvme-delete-wq]
+root          99  0.0  0.0      0     0 ?        I<   18:00   0:00 [scsi_tmf_1]
+root         100  0.0  0.0      0     0 ?        I<   18:00   0:00 [vfio-irqfd-clea]
+root         104  0.0  0.0      0     0 ?        S    18:00   0:00 [hv_balloon]
+root         105  0.0  0.0      0     0 ?        I<   18:00   0:00 [mld]
+root         106  0.0  0.0      0     0 ?        I<   18:00   0:00 [ipv6_addrconf]
+root         115  0.0  0.0      0     0 ?        I<   18:00   0:00 [kstrp]
+root         118  0.0  0.0      0     0 ?        I<   18:00   0:00 [zswap-shrink]
+root         119  0.0  0.0      0     0 ?        I<   18:00   0:00 [kworker/u3:0]
+root         126  0.0  0.0      0     0 ?        S    18:00   0:00 [jbd2/sda1-8]
+root         127  0.0  0.0      0     0 ?        I<   18:00   0:00 [ext4-rsv-conver]
+root         167  0.0  5.7 106196 49620 ?        S<s  18:00   0:00 /lib/systemd/systemd-journald
+root         200  0.0  0.0      0     0 ?        I    18:00   0:02 [kworker/0:3-events]
+root         206  0.0  0.6  20108  5972 ?        Ss   18:00   0:00 /lib/systemd/systemd-udevd
+root         221  0.0  0.0      0     0 ?        I<   18:00   0:00 [cryptd]
+root         295  0.0  0.3   3756  2684 ?        Ss   18:00   0:00 /usr/lib/linux-tools/5.15.0-1089-azure/hv_kvp_daemon -n
+root         400  0.0  0.0      0     0 ?        I<   18:00   0:00 [kaluad]
+root         401  0.0  0.0      0     0 ?        I<   18:00   0:00 [kmpath_rdacd]
+root         402  0.0  0.0      0     0 ?        I<   18:00   0:00 [kmpathd]
+root         403  0.0  0.0      0     0 ?        I<   18:00   0:00 [kmpath_handlerd]
+root         404  0.0  2.0 280328 18136 ?        SLsl 18:00   0:00 /sbin/multipathd -d -s
+root         490  0.0  0.0   2496   576 ?        S    18:00   0:00 bpfilter_umh
+systemd+     531  0.0  0.8  27416  7516 ?        Ss   18:00   0:00 /lib/systemd/systemd-networkd
+systemd+     570  0.0  1.5  25492 13024 ?        Ss   18:00   0:00 /lib/systemd/systemd-resolved
+root         653  0.0  0.0      0     0 ?        S    18:00   0:00 [jbd2/sdb1-8]
+root         654  0.0  0.0      0     0 ?        I<   18:00   0:00 [ext4-rsv-conver]
+root         687  0.0  1.0 237464  9440 ?        Ssl  18:00   0:00 /usr/lib/accountsservice/accounts-daemon
+root         691  0.0  0.3   8548  3032 ?        Ss   18:00   0:00 /usr/sbin/cron -f
+message+     692  0.0  1.5  26492 13648 ?        Ss   18:00   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         701  0.0  2.1  29880 18392 ?        Ss   18:00   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         702  0.0  0.7 232740  6840 ?        Ssl  18:00   0:00 /usr/lib/policykit-1/polkitd --no-debug
+syslog       703  0.0  2.0 243092 17664 ?        Ssl  18:00   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         715  0.1  4.7 1774448 40816 ?       Ssl  18:00   0:03 /usr/lib/snapd/snapd
+root         721  0.0  1.7  30216 15108 ?        Ss   18:00   0:00 /lib/systemd/systemd-logind
+root         724  0.0  1.6 393284 14200 ?        Ssl  18:00   0:00 /usr/lib/udisks2/udisksd
+root         725  0.0  2.4  29028 21344 ?        Ss   18:00   0:00 /usr/bin/python3 -u /usr/sbin/waagent -daemon
+daemon       726  0.0  0.2   3804  2272 ?        Ss   18:00   0:00 /usr/sbin/atd -f
+root         740  0.0  0.2   7360  2292 ttyS0    Ss+  18:00   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+root         744  0.0  0.2   5836  1832 tty1     Ss+  18:00   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root         764  0.0  0.8  12196  7508 ?        Ss   18:00   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+_chrony      778  0.0  0.3   4828  2640 ?        S    18:00   0:00 /usr/sbin/chronyd -F -1
+root         782  0.1  3.9 416548 34436 ?        Sl   18:00   0:04 python3 -u bin/WALinuxAgent-2.14.0.1-py3.12.egg -run-exthandlers
+_chrony      783  0.0  0.0   4696   196 ?        S    18:00   0:00 /usr/sbin/chronyd -F -1
+root         786  0.0  1.2 315112 11156 ?        Ssl  18:00   0:00 /usr/sbin/ModemManager
+root         811  0.0  2.3 108140 20604 ?        Ssl  18:00   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root        1121  0.0  1.7  27876 14976 ?        Ss   18:01   0:00 sshd: sandeepmohapatra177@gmail.com [priv]
+sandeep+    1126  0.0  1.1  19144  9764 ?        Ss   18:02   0:00 /lib/systemd/systemd --user
+sandeep+    1127  0.0  0.6 117536  5192 ?        S    18:02   0:00 (sd-pam)
+sandeep+    1251  0.0  0.7  28100  6340 ?        S    18:02   0:00 sshd: sandeepmohapatra177@gmail.com@pts/0
+sandeep+    1252  0.0  1.6  29256 14584 pts/0    Ss   18:02   0:00 -bash
+root        1266  0.0  1.5  29876 13504 pts/0    S    18:03   0:00 sudo su
+root        1267  0.0  1.4  29012 12476 pts/0    S    18:03   0:00 su
+root        1268  0.0  0.4   8968  4044 pts/0    S    18:03   0:00 bash
+root        1322  0.0  0.0      0     0 ?        I    18:13   0:00 [kworker/u2:2-events_unbound]
+root        1405  0.0  0.0      0     0 ?        I    18:44   0:00 [kworker/u2:1-events_unbound]
+root        1418  0.0  1.4  29712 12676 pts/0    R+   18:50   0:00 ps aux
+
+root@Sandeep-linux:~/S1/sandeep.log# ps aux |grep ubuntu
+root        1426  0.0  0.0   8168   720 pts/0    S+   18:50   0:00 grep --color=auto ubuntu
+root@Sandeep-linux:~/S1/sandeep.log#
+
+root@Sandeep-linux:~/S1/sandeep.log# ps aux |grep ubuntu | awk '{print $3}'
+0.0
+root@Sandeep-linux:~/S1/sandeep.log# 
