@@ -1,4 +1,4 @@
-awk:to play with logs
+awk:to play with logs | works column by column
 
 created a new dir: mkdir sandeep.log
 root@Sandeep-linux:~/S1/sandeep.log# cat > samplelogs
