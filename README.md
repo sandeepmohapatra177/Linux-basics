@@ -10,3 +10,13 @@ Search virual machine and select Ubuntu LTS. After configuration, the portal wil
 Start the VM and click on connect. Congrats, now you have a VM where you can do the hands on. The linux cmd will be like this
 
 ![image](https://github.com/user-attachments/assets/7b2e292f-0668-41ac-b724-3abc5ac7e704)
+
+Created 3 disks:
+
+<img width="1797" height="789" alt="image" src="https://github.com/user-attachments/assets/e587c034-c46b-467b-9390-17f51ed82a18" />
+
+Attached 2 disks:
+
+<img width="1193" height="779" alt="image" src="https://github.com/user-attachments/assets/72875d21-64d5-468b-952f-0182894d0ffe" />
+
+
